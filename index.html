@@ -415,9 +415,12 @@
       }
       .frame-card {
         position: relative; display: flex; flex-direction: column;
-        background-image: url("assets/img/ui/textbox-glitched.png");
-        background-size: 100% 100%; background-position: center; background-repeat: no-repeat;
-        padding: 60px 50px;
+        border-style: solid;
+        border-width: 30px 34px 30px 36px;
+        border-image-source: url("assets/img/ui/textbox-glitched.png");
+        border-image-slice: 32 34 30 36;
+        border-image-repeat: stretch;
+        padding: 26px 28px;
       }
       .frame-card-content { position: relative; display: flex; flex-direction: column; gap: 14px; }
       .frame-card-content p { line-height: 1.7; }
@@ -804,7 +807,7 @@
       /* ---------- Responsive ---------- */
       @media (max-width: 1024px) {
         .about-grid { grid-template-columns: 1fr; gap: 40px; }
-        .frame-card { padding: 50px 34px; }
+        .frame-card { padding: 22px 24px; }
         .steps-grid { grid-template-columns: 1fr; }
         .kit-hero { grid-template-columns: 1fr; }
         .audience-grid { grid-template-columns: 1fr; }
@@ -822,7 +825,7 @@
         .hero-content { padding-top: 90px; }
         .hero-logo { width: 90vw; }
         .section-title { font-size: 30px; }
-        .frame-card { padding: 40px 28px; }
+        .frame-card { border-width: 18px 20px 18px 22px; padding: 20px 18px; }
         .stats-row { gap: 10px; }
         .formats-grid { grid-template-columns: 1fr; }
         .pins-grid { grid-template-columns: repeat(3, 1fr); }
